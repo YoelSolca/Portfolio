@@ -26,8 +26,8 @@ body {
     position: fixed;
     width: 300px;
     height: 100%;
-    border-right: 1px solid rgba(0, 0, 0, .05);
-    background: var(--white);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,13 +131,13 @@ body {
 section {
     position: relative;
     min-height: 100vh;
+    margin-left: 10px;
 }
 
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
 }
 
 .banner .content {
@@ -214,4 +214,56 @@ p {
 .socialMedia li a:hover {
     background: var(--black2);
     color: var(--white);
+}
+
+.adjust {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 0 40px;
+    background: var(--white);
+    color: var(--black);
+    display: inline-block;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h2 {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.title h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background: var(--black);
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about .content .textBox {
+    width: 49%;
+    min-width: 49%;
+}
+
+.about .content .imgBx {
+    margin-left: 40px;
+}
+
+.about .content .imgBx img {
+    max-width: 100%;
 }
