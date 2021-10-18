@@ -5,288 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <script src="https://kit.fontawesome.com/dcfddf5262.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dcfddf5262.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
+    <!-- Animation Effect -->
+   
+    <div class="bg-animation-effect">
 
-        <div class="navigation">
-            <ul>
-                <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu();">About</a></li>
-                <li><a href="#services" onclick="toggleMenu();">Services</a></li>
-                <li><a href="#project" onclick="toggleMenu();">Project</a></li>
-                <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
-                <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-            </ul>
-            <div class="themeSwitch">
-
-            </div>
-        </div>
-
-        <div class="main">
-
-            <div class="topbar">
-                <a href="#" class="logo">Portfolio</a>
-                <div class="toggle">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-
-            <!-- Home -->
-            <section class="banner" id="banner">
-                <div class="content">
-
-                    <div class="imgBx">
-                        <img src="Img-Portfolio/268813523 (1).jpg" alt="">
-                    </div>
-
-                    <h3>Yoel Solca</h3>
-                    <p>Soy Desarollador de Software.</p>
-                    <a href="Img-Portfolio/CV - Yoel Carreras.pdf" class="btn">Download CV</a>
-
-                    <ul class="socialMedia">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- About -->
-            <section class="about adjust" id="about">
-                <div class="title">
-                    <h2>About Me</h2>
-                </div>
-                <div class="content">
-                    <div class="textBox">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro soluta pariatur, corrupti architecto quam fuga commodi sunt, sint distinctio voluptate quo tempore id amet, a ab. Tempora fugit, hic excepturi praesentium vel quidem dolorum. Ea incidunt quibusdam
-                        temporibus totam dolore quaerat, rem veniam recusandae reiciendis dolores similique repellendus debitis eum magnam voluptas beatae ipsam minima vel. Explicabo fugiat sint, numquam omnis recusandae nisi! Labore, sed eum ut nobis
-                        <br><br> saepe corporis, expedita molestias a et cumque, impedit eligendi mollitia. Tempora molestias quis error doloribus voluptatem eligendi reprehenderit expedita quisquam, consequuntur consequatur at accusantium in? Corrupti
-                        possimus aliquid repellendus deleniti sed qui, repudiandae dolorem eius minus maiores sapiente sequi magnam omnis dolore ad id libero hic! Voluptatem, deleniti eaque!
-                    </div>
-                    <div class="imgBx">
-                        <img src="Img-Portfolio/img1.png">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Services -->
-            <section class="services adjust" id="services">
-
-                <div class="title">
-                    <h2>Our Services</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi doloribus ut, in molestias veniam modi beatae.</p>
-                </div>
-
-                <div class="content">
-                    <div class="serviceBox">
-                        <img src="Img-Portfolio/icon1.png">
-                        <h2>Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptatem atque blanditiis vero ab inventore tempora repudiandae! Ipsam enim repellendus architecto! Nihil illum placeat deserunt deleniti aliquid quas hic.</p>
-                    </div>
-                    <div class="serviceBox">
-                        <img src="Img-Portfolio/icon2.png">
-                        <h2>Web Development</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptatem atque blanditiis vero ab inventore tempora repudiandae! Ipsam enim repellendus architecto! Nihil illum placeat deserunt deleniti aliquid quas hic.</p>
-                    </div>
-                    <div class="serviceBox">
-                        <img src="Img-Portfolio/icon3.png">
-                        <h2>Android App</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptatem atque blanditiis vero ab inventore tempora repudiandae! Ipsam enim repellendus architecto! Nihil illum placeat deserunt deleniti aliquid quas hic.</p>
-                    </div>
-                    <div class="serviceBox">
-                        <img src="Img-Portfolio/icon4.png">
-                        <h2>Photography</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptatem atque blanditiis vero ab inventore tempora repudiandae! Ipsam enim repellendus architecto! Nihil illum placeat deserunt deleniti aliquid quas hic.</p>
-                    </div>
-                    <div class="serviceBox">
-                        <img src="Img-Portfolio/icon5.png">
-                        <h2>Content Writing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptatem atque blanditiis vero ab inventore tempora repudiandae! Ipsam enim repellendus architecto! Nihil illum placeat deserunt deleniti aliquid quas hic.</p>
-                    </div>
-                    <div class="serviceBox">
-                        <img src="Img-Portfolio/icon6.png">
-                        <h2>Video Editing</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorem voluptatem atque blanditiis vero ab inventore tempora repudiandae! Ipsam enim repellendus architecto! Nihil illum placeat deserunt deleniti aliquid quas hic.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects -->
-            <section class="project adjust" id="project">
-
-                <div class="title">
-                    <h2>Recent Work</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi doloribus ut, in molestias veniam modi beatae.</p>
-                </div>
-
-                <div class="content">
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img1.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 01</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img2.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 02</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img3.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 03</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img4.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 04</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img5.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 05</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img6.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 06</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img7.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 07</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img8.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 08</h3>
-                        </div>
-                    </div>
-
-                    <div class="workBx">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/img9.jpg">
-                        </div>
-                        <div class="textBx">
-                            <h3>Project 09</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Testimonials -->
-            <section class="testimonials adjust" id="testimonials">
-
-                <div class="title">
-                    <h2>Testimonials</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi doloribus ut, in molestias veniam modi beatae.</p>
-                </div>
-
-                <div class="content">
-
-                    <div class="testimonialsBox">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/user1.jpg">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta labore beatae, sapiente dolores, expedita excepturi quae corrupti natus magnam vitae quo nesciunt quibusdam alias soluta tempore? Sit, omnis! Quod?</p>
-                        <h4>Someone Famouse<br><span>Website Designer</span></h4>
-                    </div>
-
-                    <div class="testimonialsBox">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/user2.jpg">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta labore beatae, sapiente dolores, expedita excepturi quae corrupti natus magnam vitae quo nesciunt quibusdam alias soluta tempore? Sit, omnis! Quod?</p>
-                        <h4>Someone Famouse<br><span>Website Designer</span></h4>
-                    </div>
-
-                    <div class="testimonialsBox">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/user3.jpg">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta labore beatae, sapiente dolores, expedita excepturi quae corrupti natus magnam vitae quo nesciunt quibusdam alias soluta tempore? Sit, omnis! Quod?</p>
-                        <h4>Someone Famouse<br><span>Website Designer</span></h4>
-                    </div>
-
-                    <div class="testimonialsBox">
-                        <div class="imgBx">
-                            <img src="Img-Portfolio/user1.jpg">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta labore beatae, sapiente dolores, expedita excepturi quae corrupti natus magnam vitae quo nesciunt quibusdam alias soluta tempore? Sit, omnis! Quod?</p>
-                        <h4>Someone Famouse<br><span>Website Designer</span></h4>
-                    </div>
-
-                </div>
-            </section>
-
-
-            <!-- Contact -->
-            <section class="contact adjust" id="contact">
-
-                <div class="title">
-                    <h2>Let's Say Hi</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eligendi doloribus ut, in molestias veniam modi beatae.</p>
-                </div>
-                <div class="contactForm">
-
-                    <div class="row">
-                        <input type="text" name="" placeholder="First Name">
-                        <input type="text" name="" placeholder="Last Name">
-                    </div>
-
-                    <div class="row">
-                        <input type="text" name="" placeholder="Email Address">
-                        <input type="text" name="" placeholder="Mobile No.">
-                    </div>
-
-                    <div class="row2">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-
-                    <div class="row2">
-                        <input type="submit" value="Send">
-                    </div>
-                </div>
-            </section>
-        </div>
     </div>
 
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row min-vh-100">
+                <div class="about-content">
+                    <img src="Img-Portfolio/yoel123.jpeg" alt="profile-img">
+                    <h1>Hi, My name is Yoel Solca.</h1>
+                    <p>I'm a <span>Software developer</span> in living Córdoba Argentina.
+                    I'm make web applications using <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span>
+                    .Check out my latest work on the </span><a href="#">portfolio page</a>. Want to talk
+                    about a project? You can get in touch with me <a href="#">here</a>.</p>
+                        
+                    <h2>skills</h2>
+                    <div class="skills">
+                        <div class="skill-item">html</div>
+                        <div class="skill-item">css</div>
+                        <div class="skill-item">javascript</div>
+                        <div class="skill-item">bootstrap</div>
+                        <div class="skill-item">c#</div>
+                        <div class="skill-item">sql server</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Asp.netCore</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+           
     <script src="script.js"></script>
 </body>
 

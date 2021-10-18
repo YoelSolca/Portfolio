@@ -1,29 +1,16 @@
-let toggle = document.querySelector('.toggle');
-let topbar = document.querySelector('.topbar');
-let navigation = document.querySelector('.navigation');
-let main = document.querySelector('.main');
-let themeSwitch = document.querySelector('.themeSwitch');
-let body = document.querySelector('body');
+/* Animation Effect*/
 
 
-toggle.onclick = function() {
-    toggle.classList.toggle('active');
-    topbar.classList.toggle('active');
-    navigation.classList.toggle('active');
-    main.classList.toggle('active');
+function bgAanimationItems(){
+    const rows = 7, cols = 10;
+
+    for(let i=0; i < rows; i++){
+        for(let j=0; j< cols; j++){
+            const div = document.createElement("div");
+            div.className = `col-${j+1}`;
+            document.querySelector(".bg-animation-effect").appendChild(div);
+        }
+    }
 }
 
-/* Fix menu active class issue for mobile devices*/
-function toggleMenu() {
-    let navigation = document.querySelector('.navigation');
-    let main = document.querySelector('.main');
-
-    navigation.classList.remove('active');
-    main.classList.remove('active');
-
-}
-
-/* Theme switch toggle*/
-themeSwitch.onclick = function() {
-    body.classList.toggle('dark');
-}
+bgAanimationItems();
