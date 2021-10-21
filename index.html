@@ -60,7 +60,10 @@
                 <button type="button" title="Show All Works" class="portfolio-filter-btn active" data-filter="all">all</button>
                 <button type="button" title="Filter by Front-End" class="portfolio-filter-btn" data-filter="front-end">front-end</button>
                 <button type="button" title="Filter by Back-End" class="portfolio-filter-btn" data-filter="back-end">back-end</button>
-                <button type="button" title="Filter by Bootstrap" class=" portfolio-filter-btn" data-filter="bootstrap">bootstrap</button>
+                <button type="button" title="Filter by Bootstrap" class="portfolio-filter-btn" data-filter="bootstrap">bootstrap</button>
+            </div>
+            <div class="filter-status">
+                <p></p>
             </div>
         </div>
 
@@ -87,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="front-end, bootstrap">
+            <div class="portfolio-item" data-category="front-end,bootstrap">
                 <div class="portfolio-item-thumbnail">
                     <img src="Img-Portfolio/portfolio/2.jpg" alt="thumbnail">
                     <button type="button" class="btn more-info-btn">more info</button>
@@ -127,7 +130,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="front-end, bootstrap">
+            <div class="portfolio-item" data-category="front-end,bootstrap">
                 <div class="portfolio-item-thumbnail">
                     <img src="Img-Portfolio/portfolio/4.jpg" alt="thumbnail">
                     <button type="button" class="btn more-info-btn">more info</button>
@@ -167,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="front-end, bootstrap">
+            <div class="portfolio-item" data-category="front-end,bootstrap">
                 <div class="portfolio-item-thumbnail">
                     <img src="Img-Portfolio/portfolio/6.jpg" alt="thumbnail">
                     <button type="button" class="btn more-info-btn">more info</button>
@@ -187,7 +190,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="front-end, bootstrap">
+            <div class="portfolio-item" data-category="front-end,bootstrap">
                 <div class="portfolio-item-thumbnail">
                     <img src="Img-Portfolio/portfolio/7.jpg" alt="thumbnail">
                     <button type="button" class="btn more-info-btn">more info</button>
@@ -211,6 +214,43 @@
 
     </section>
 
+    <!-- Portfolio item details -->
+    <div class="portafolio-popup">
+        <div class="pp-overlay"></div>
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <h2 class="pp-counter">
+
+                    </h2>
+                    <button type="button" title="close" class="close-btn pp-close-btn"></button>
+                    <div class="pp-thumbnail">
+                        <img src="Img-Portfolio/portfolio/7.jpg" alt="pp-thumbnail">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body">
+
+                </div>
+                <div class="pp-footer">
+                    <div class="pp-footer-left hidden">
+                        <button type="button" title="Prev Work" class="btn pp-prev-btn">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <h3></h3>
+                        <img src="Img-Portfolio/portfolio/1.jpg" alt="prev work thumbnail">
+                    </div>
+                    <div class="pp-footer-right hidden">
+                        <button type="button" title="Next Work" class="btn pp-next-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <h3></h3>
+                        <img src="Img-Portfolio/portfolio/2.jpg" alt="next work thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js "></script>
 </body>
