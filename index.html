@@ -11,20 +11,69 @@
 </head>
 
 <body>
-    <!-- Animation Effect -->
 
+    <!-- Page loader start -->
+    <div class="page-loader">
+        <div class="page-loader-inner">
+            <div class="circle">
+            </div>
+            loading
+        </div>
+    </div>
+
+    <!-- Animation Effect -->
     <div class="bg-animation-effect">
     </div>
 
+    <!-- Overlay effecr Start -->
+    <div class="overlay-effect">
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+    </div>
+
+    <!-- Header Section-->
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+                <!-- nav -->
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li>
+                                <a href="#about" class="nav-item link-item">about</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="nav-item link-item">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="nav-item link-item">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
     <!-- About Section -->
-    <section class="about-section hidden">
+    <section class="about-section active" id="about">
         <div class=" container ">
             <div class="row min-vh-100 ">
                 <div class="about-content ">
                     <img src="Img-Portfolio/yoel123.jpeg " alt="profile-img">
                     <h1>Hi, My name is Yoel Solca.</h1>
-                    <p>I'm a <span>Software developer</span> in living Córdoba Argentina. I'm make web applications using <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span> .Check out my latest work on the </span><a href="# ">portfolio page</a>.
-                        Want to talk about a project? You can get in touch with me <a href="# ">here</a>.</p>
+                    <p>I'm a <span>Software developer</span> in living Córdoba Argentina. I'm make web applications using <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span> .Check out my latest work on the </span><a href="#portfolio"
+                            class="link-item">portfolio page</a>. Want to talk about a project? You can get in touch with me <a href="#contact" class="link-item">here</a>.</p>
 
                     <h2>skills</h2>
                     <div class="skills ">
@@ -45,7 +94,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio-section sec-padding hidden">
+    <section class="portfolio-section sec-padding" id="portfolio">
         <div class="container">
 
             <div class="row">
@@ -212,7 +261,7 @@
         </div>
     </section>
 
-    <section class="contact-section sec-padding min-vh-100">
+    <section class="contact-section sec-padding min-vh-100" id="contact">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -270,7 +319,6 @@
             </div>
         </div>
     </section>
-
 
 
 
