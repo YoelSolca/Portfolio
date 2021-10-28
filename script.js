@@ -15,7 +15,7 @@ function bgAanimationItems() {
         for (let j = 0; j < cols; j++) {
             const div = document.createElement("div");
             div.className = `col-${j+1}`;
-            document.querySelector(".bg-animation-effect").appendChild(div);
+            //document.querySelector(".bg-animation-effect").appendChild(div);
         }
     }
 }
@@ -87,10 +87,10 @@ filtersBtnsContainer.addEventListener("click", (e) => {
         e.target.classList.add("active");
         toggleBodycrolling();
         document.querySelector(".filter-status").classList.add("active");
-        document.querySelector(".filter-status p").innerHTML = `filtering <span>${e.target.innerHTML}</span> works`;
+        //document.querySelector(".filter-status p").innerHTML = `filtering <span>${e.target.innerHTML}</span> works`;
         setTimeout(() => {
             filterItems(e.target);
-        }, 400);
+        }, 200);
         setTimeout(() => {
             document.querySelector(".filter-status").classList.remove("active");
             toggleBodycrolling();
