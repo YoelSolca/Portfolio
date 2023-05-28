@@ -16,15 +16,60 @@
     <div class="bg-animation-effect">
     </div>
 
+
+    <!-- Overlay Effect-->
+    <div class="overlay-effect">
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+        <div class="overlay-effect-item"></div>
+    </div>
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <div class="row flex-end">
+                <button type="button" class="nav-toggler">
+                    <span></span>
+                </button>
+
+                <!-- nav -->
+                <nav class="nav">
+                    <div class="nav-inner">
+                        <ul>
+                            <li>
+                                <a href="#about" class="nav-item link-item">about</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="nav-item link-item">portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="nav-item link-item">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
     <!-- About Section -->
-    <section class="about-section hidden">
+    <section class="about-section active" id="about">
         <div class=" container ">
             <div class="row min-vh-100 ">
-                <div class="about-content ">
+                <div class="about-content">
                     <img src="Img-Portfolio/yoel123.jpeg " alt="profile-img">
                     <h1>Hi, My name is Yoel Solca.</h1>
-                    <p>I'm a <span>Software developer</span> in living Córdoba Argentina. I'm make web applications using <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span> .Check out my latest work on the </span><a href="# ">portfolio page</a>.
-                        Want to talk about a project? You can get in touch with me <a href="# ">here</a>.</p>
+                    <p>I'm a <span>Software developer</span> in living Córdoba Argentina. I'm make web applications using <span>html</span>, <span>css</span>, <span>javascript</span> and <span>bootstrap</span> .Check out my latest work on the </span><a href="#portfolio" class="link-item">portfolio page</a>.
+                        Want to talk about a project? You can get in touch with me <a href="#contact" class="link-item">here</a>.</p>
 
                     <h2>skills</h2>
                     <div class="skills ">
@@ -34,9 +79,7 @@
                         <div class="skill-item ">bootstrap</div>
                         <div class="skill-item ">c#</div>
                         <div class="skill-item ">sql server</div>
-                        <div class="skill-item ">MongoDB</div>
-                        <div class="skill-item ">Node.js</div>
-                        <div class="skill-item ">Asp.netCore</div>
+                        <div class="skill-item ">.Net</div>
                     </div>
                 </div>
 
@@ -45,7 +88,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio-section sec-padding">
+    <section class="portfolio-section sec-padding" id="portfolio">
         <div class="container">
 
             <div class="row">
@@ -213,6 +256,81 @@
         </div>
 
     </section>
+
+    <section class="contact-section sec-padding min-vh-100" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>contact me</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla itaque est harum repellendus earum architecto asperiores totam odit sint? Exercitationem tempora molestias sapiente, aliquid laudantium suscipit quaerat similique laborum! Corporis.
+                        </p>
+                    </div>
+                    <div class="contact-info-item">
+                        <p>Email me on <span>example@gmail.com</span></p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <p class="social-links">
+                            <span>Find me on</span>
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </p>
+                    </div>
+                    <button type="button" class="btn toggle-contact-form-btn">Send message</button>
+                </div>
+            
+            <!-- Contact Form Start -->
+            <div class="contact-form">
+                <div class="contact-form-inner">
+                    <div class="contact-form-container">
+                        <button type="button" class="close-btn toggle-contact-form-btn"></button>
+                        <form>
+                            <div class="row">
+                                
+                                <div class="input-group">
+                                    <input type="text" placeholder="Your Name"
+                                    class="input-control">
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text" placeholder="Your Email"
+                                    class="input-control">
+                                </div>
+
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject"
+                                    class="input-control">
+                                </div>
+
+                                <div class="input-group">
+                                    <textarea placeholder="Message" class="input-control"></textarea>
+                                </div>
+
+                                <div class="input-group">
+                                    <button type="submit" class="btn btn-submit">Send</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form End -->
+            </div>
+
+        </div>
+    </section>
+
+
 
     <!-- Portfolio item details -->
     <div class="portafolio-popup">

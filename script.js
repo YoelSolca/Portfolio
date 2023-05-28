@@ -16,6 +16,52 @@ function bgAanimationItems() {
 
 bgAanimationItems();
 
+/* Toogle NavBar */
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click", toggleNavbar);
+
+function toggleNavbar() {
+    navToggler.classList.toggle("active");
+    document.querySelector(".nav").classList.toggle("open"); 
+    toggleOverlayEffect();
+    toggleBodycrolling();
+}
+
+
+/* Hide & Show Section*/ 
+document.addEventListener("click", (e) =>{
+    const hash = e.target.hash;
+    if(e.target.classList.contains("link-item") && e.target.hash !== ""){
+        activeSection(hash);
+        toggleNavbar();
+    }else{
+        toggleBodycrolling();
+        toggleOverlayEffect();
+        document.querySelector(".nav-toggler").classList.add("toggle-hide");
+        setTimeout(() => {
+            activeSection(hash);
+            toggleOverlayEffect();
+            toggleBodycrolling();
+            document.querySelector(".nav-toggler").classList.remove("toggle-hide");
+        }, 950);
+    }
+});
+
+function activeSection(sectionId){
+    document.querySelector("section.active").classList.remove("active");
+    document.querySelector(sectionId).classList.add("active");
+    window.scrollTo(0,0);
+}
+
+/*Toggle Overlay Effect*/
+
+
+function toggleOverlayEffect() {
+    document.querySelector(".overlay-effect").classList.toggle("active");
+}
+
+
+
 
 /* Toogle body scrolling */
 function toggleBodycrolling() {
@@ -151,3 +197,15 @@ function changePortfolioItem(direction) {
         document.querySelector(".pp-overlay").classList.remove(direction);
     }, 1000);
 }
+
+
+
+
+/* Toogle Contact form*/
+
+document.addEventListener("click", (e) =>{
+    if(e.target.classList.contains("toggle-contact-form-btn")){
+        document.querySelector(".contact-form").classList.toggle("open");
+        toggleBodycrolling();
+    }
+});
